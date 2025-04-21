@@ -25,7 +25,7 @@ function getEndpoints(deviceAddress, endpoints)
 
   //Bateria
   var epbat = endpoints.addEndpoint("2", "Battery", endpointType.genericSensor); 
-  epbat.variableTypeId = 1241;
+  epbat.variableTypeId = 1217;
 
   //SOS
   
@@ -38,7 +38,7 @@ function getEndpoints(deviceAddress, endpoints)
     //Light level percentage, not lumens
   
   var eplight = endpoints.addEndpoint("5", "Light level", endpointType.genericSensor);
-  eplight.variableTypeId = 1243;
+  eplight.variableTypeId = 1218;
    
  
 }
