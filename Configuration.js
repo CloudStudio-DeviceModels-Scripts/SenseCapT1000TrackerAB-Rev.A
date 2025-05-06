@@ -14,32 +14,22 @@ function getConfiguration(config)
 
 function getEndpoints(deviceAddress, endpoints)
 {
-  // This function allows you to indicate the initial endpoint configuration
-  // when a device is created using this model. This improves end-user 
-  // experience significantly, because it allows the platform to create
-  // all endpoints included in the device automatically when the device
-  // is created.
-  
   //Tracker
   var eplt = endpoints.addEndpoint("1", "Location tracking", endpointType.locationTracker);
 
   //Bateria
   var epbat = endpoints.addEndpoint("2", "Battery", endpointType.genericSensor); 
-  epbat.variableTypeId = 1241;
+  epbat.variableTypeId = 1226;
 
   //SOS
-  
   var epsos = endpoints.addEndpoint("3", "SOS", endpointType.iasSensor, iasEndpointSubType.alarmInput);
 
-   //Temperature
-  
+  //Temperature
   var eptemp = endpoints.addEndpoint("4", "Temperature", endpointType.temperatureSensor);
 
-    //Light level percentage, not lumens
-  
+  //Light level percentage, not lumens
   var eplight = endpoints.addEndpoint("5", "Light level", endpointType.genericSensor);
-  eplight.variableTypeId = 1243;
-   
+  eplight.variableTypeId = 1225;
  
 }
 
